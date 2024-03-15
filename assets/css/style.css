@@ -1,0 +1,165 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: normal;
+   width: 100%;
+}
+
+body header {
+   /* position: fixed; */
+   width: 100%;
+   /* Para que ocupe todo el ancho disponible */
+   height: 80px;
+   /* Se establece una altura de 80 pixeles */
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+ul {
+   list-style: none;
+}
+
+header {
+   background-color: #ffc017;
+   /* Establece el color de fondo del encabezado */
+   display: flex;
+   /* Hace que el encabezado sea un contenedor flex */
+   border-bottom: 2px solid #000;
+   /* Aumenta el grosor del borde a 2 píxeles, establece el estilo a sólido y el color a negro */
+}
+
+header nav {
+   width: 100%;
+   height: auto;
+   display: flex;
+   /* Hace que los elementos de navegación sean flexibles */
+   justify-content: space-between;
+   /* Distribuye los elementos de forma equitativa en el encabezado */
+   align-items: center;
+   /* Centra verticalmente los elementos */
+   margin: 0px 40px 0px 40px;
+}
+
+header nav .nav-left-section {
+   height: auto;
+   /* Ajusta la altura automáticamente */
+   display: flex;
+   /* Hace que la sección izquierda sea un contenedor flex */
+   align-items: center;
+   /* Centra verticalmente los elementos */
+}
+
+header nav .nav-right-section {
+   height: auto;
+   /* Ajusta la altura automáticamente */
+   display: flex;
+   /* Hace que la sección derecha sea un contenedor flex */
+   align-items: center;
+   /* Centra verticalmente los elementos */
+}
+
+header nav .nav-right-section .nav-right-section-item {
+   display: flex;
+   margin-right: 20px;
+}
+
+header nav .nav-right-section .nav-right-section-item a {
+   color: black;
+}
+
+header nav .nav-right-section .nav-right-section-item:nth-child(5) a {
+   padding: 8px 16px;
+   color: white;
+   background-color: #000;
+   border-radius: 20px;
+}
+
+section {
+   width: 100%;
+}
+
+main {
+   display: inline;
+}
+
+main .main-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ffc017;
+   border-bottom: 2px solid #000;
+   /* Aumenta el grosor del borde a 2 píxeles, establece el estilo a sólido y el color a negro */
+}
+
+main .title-information {
+   padding: 93px 92px;
+}
+
+main section .title-information h1 {
+   margin: 0;
+   font-size: 80px;
+}
+
+main section .title-information h2 {
+   color: gray;
+}
+
+main section .title-information button {
+   font-size: 15px;
+   width: 213px;
+   padding: 8px 20px;
+   border-style: none;
+   border-radius: 25px;
+   color: white;
+   background-color: #141414;
+   cursor: pointer;
+}
+
+main section .title-information button:hover {
+   background-color: #000;
+}
+
+main .trending-section {
+   margin: 50px;
+   display: block;
+   justify-content: center;
+   align-items: center;
+}
+
+main .trending-section .trending-tittle {
+   width: 100%;
+   height: auto;
+   margin-left: 20px;
+   display: flex;
+   justify-content: start;
+}
+
+main .trending-section .trending-icon {
+   justify-content: start;
+   align-items: center;
+}
+
+main .trending-section .trending-tittle p {
+   justify-content: start;
+   align-items: center;
+}
+
+main .trending-content {
+   width: 100%;
+   height: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, auto);
+   justify-content: center;
+   align-items: center;
+}
+
+article {
+   width: 100%;
+   height: auto;
+}
